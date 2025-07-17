@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projetos Estratégicos de Curitiba</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/feather-icons"></script>
+<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .category-badge {
+            top: -10px;
+            right: -10px;
+        }
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="fixed w-full bg-white shadow-md z-50">
+<!-- Mobile menu -->
+</header>
+<!-- Hero Section -->
+<!-- Sobre o Projeto -->
+<section class="py-16 bg-white" id="sobre">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre o Projeto</h2>
+<p class="text-lg text-gray-600 mb-8">
+                    Os Projetos Estratégicos de Curitiba representam um conjunto de iniciativas inovadoras que visam o desenvolvimento urbano sustentável, a melhoria da qualidade de vida e o fortalecimento da economia local. Baseados em evidências e planejamento técnico, esses projetos foram cuidadosamente elaborados para atender às demandas atuais e futuras da população curitibana.
+                </p>
+<div class="bg-blue-50 border-l-4 border-blue-500 p-6 text-left max-w-2xl mx-auto">
+<p class="text-xl font-semibold text-blue-800">"Mais de 30 projetos prontos para transformar a cidade."</p>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8 mt-12">
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="text-blue-600 mb-4">
+<i class="w-10 h-10" data-feather="compass"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Visão Estratégica</h3>
+<p class="text-gray-600">Projetos alinhados com os Objetivos de Desenvolvimento Sustentável da ONU e o Plano Diretor de Curitiba.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="text-blue-600 mb-4">
+<i class="w-10 h-10" data-feather="users"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Participação Popular</h3>
+<p class="text-gray-600">Iniciativas desenvolvidas com ampla participação da sociedade civil e especialistas.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="text-blue-600 mb-4">
+<i class="w-10 h-10" data-feather="trending-up"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Desenvolvimento Sustentável</h3>
+<p class="text-gray-600">Foco em soluções que equilibram crescimento econômico, inclusão social e preservação ambiental.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção Projetos -->
+<section class="py-12 bg-gray-100" id="projetos">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Projetos Estratégicos</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_1')">
+<img alt="PORTAL DE MONITORAMENTO DE INDICADORES DE CURITIBA" class="w-full h-48 object-cover" src="slide_pg4.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">PORTAL DE MONITORAMENTO DE INDICADORES DE CURITIBA</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_2')">
+<img alt="PORTAL NOSSO BAIRRO" class="w-full h-48 object-cover" src="slide_pg6.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">PORTAL NOSSO BAIRRO</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_3')">
+<img alt="CASA DO URBANISMO" class="w-full h-48 object-cover" src="slide_pg8.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">CASA DO URBANISMO</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_4')">
+<img alt="CURITIBA EM MAPAS" class="w-full h-48 object-cover" src="slide_pg10.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">CURITIBA EM MAPAS</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_5')">
+<img alt="MOINHO REBOUÇAS" class="w-full h-48 object-cover" src="slide_pg12.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">MOINHO REBOUÇAS</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_6')">
+<img alt="FAROL DO SABER E INOVAÇÃO" class="w-full h-48 object-cover" src="slide_pg13.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">FAROL DO SABER E INOVAÇÃO</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_7')">
+<img alt="ESCOLA DE CIRCO E MARIONETES" class="w-full h-48 object-cover" src="slide_pg14.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">ESCOLA DE CIRCO E MARIONETES</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_8')">
+<img alt="CRAS Caximba" class="w-full h-48 object-cover" src="slide_pg16.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">CRAS Caximba</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_9')">
+<img alt="RUA DA MEMORIA" class="w-full h-48 object-cover" src="slide_pg18.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">RUA DA MEMORIA</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_10')">
+<img alt="REVITALIZAÇÃO RUA CRUZ MACHADO" class="w-full h-48 object-cover" src="slide_pg21.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">REVITALIZAÇÃO RUA CRUZ MACHADO</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_11')">
+<img alt="REQUALIFICAÇÃO URBANA" class="w-full h-48 object-cover" src="slide_pg22.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">REQUALIFICAÇÃO URBANA</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_12')">
+<img alt="PROJETO DE PAISAGISMO E CALÇADAS" class="w-full h-48 object-cover" src="slide_pg24.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">PROJETO DE PAISAGISMO E CALÇADAS</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_13')">
+<img alt="PLANO DE ESTRUTURA CICLOVIÁRIA DE CURITIBA" class="w-full h-48 object-cover" src="slide_pg32.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">PLANO DE ESTRUTURA CICLOVIÁRIA DE CURITIBA</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_proj_14')">
+<img alt="PLATAFORMA INTEGRADORA" class="w-full h-48 object-cover" src="slide_pg33.png"/>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">PLATAFORMA INTEGRADORA</h3>
+<p class="text-sm text-gray-600">Clique para visualizar detalhes do projeto.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 bg-gray-100" id="secretarias">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Secretarias</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-gray-900 text-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_sec_1')">
+<div class="h-48 flex items-center justify-center text-xl font-bold">SMATI</div>
+<div class="p-4">
+<p class="text-sm">Secretaria Municipal de Administração e Tecnologia da Informação</p>
+</div>
+</div>
+<div class="bg-gray-900 text-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_sec_2')">
+<div class="h-48 flex items-center justify-center text-xl font-bold">SMS</div>
+<div class="p-4">
+<p class="text-sm">Secretaria Municipal de Saúde</p>
+</div>
+</div>
+<div class="bg-gray-900 text-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_sec_3')">
+<div class="h-48 flex items-center justify-center text-xl font-bold">SMMA</div>
+<div class="p-4">
+<p class="text-sm">Secretaria Municipal do Meio Ambiente</p>
+</div>
+</div>
+<div class="bg-gray-900 text-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_sec_4')">
+<div class="h-48 flex items-center justify-center text-xl font-bold">IPPUC</div>
+<div class="p-4">
+<p class="text-sm">Instituto de Pesquisa e Planejamento Urbano de Curitiba</p>
+</div>
+</div>
+<div class="bg-gray-900 text-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition" onclick="openModal('modal_sec_4')">
+<div class="h-48 flex items-center justify-center text-xl font-bold">SAMIR</div>
+<div class="p-3">
+<p class="text-sm">SECRETARIA MUNICIPAL DA MULHER E IGUALDADE ÉTNICO-RACIAL</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_1">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_1')">×</span>
+<h2 class="text-2xl font-bold mb-4">PORTAL DE MONITORAMENTO DE INDICADORES DE CURITIBA</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 4" class="mb-4 rounded shadow" src="slide_pg4.png"/><img alt="Página 5" class="mb-4 rounded shadow" src="slide_pg5.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_2">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_2')">×</span>
+<h2 class="text-2xl font-bold mb-4">PORTAL NOSSO BAIRRO</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 6" class="mb-4 rounded shadow" src="slide_pg6.png"/><img alt="Página 7" class="mb-4 rounded shadow" src="slide_pg7.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_3">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_3')">×</span>
+<h2 class="text-2xl font-bold mb-4">CASA DO URBANISMO</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 8" class="mb-4 rounded shadow" src="slide_pg8.png"/><img alt="Página 9" class="mb-4 rounded shadow" src="slide_pg9.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_4">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_4')">×</span>
+<h2 class="text-2xl font-bold mb-4">CURITIBA EM MAPAS</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 10" class="mb-4 rounded shadow" src="slide_pg10.png"/><img alt="Página 11" class="mb-4 rounded shadow" src="slide_pg11.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_5">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_5')">×</span>
+<h2 class="text-2xl font-bold mb-4">MOINHO REBOUÇAS</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 12" class="mb-4 rounded shadow" src="slide_pg12.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_6">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_6')">×</span>
+<h2 class="text-2xl font-bold mb-4">FAROL DO SABER E INOVAÇÃO</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 13" class="mb-4 rounded shadow" src="slide_pg13.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_7">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_7')">×</span>
+<h2 class="text-2xl font-bold mb-4">ESCOLA DE CIRCO E MARIONETES</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 14" class="mb-4 rounded shadow" src="slide_pg14.png"/><img alt="Página 15" class="mb-4 rounded shadow" src="slide_pg15.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_8">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_8')">×</span>
+<h2 class="text-2xl font-bold mb-4">CRAS Caximba</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 16" class="mb-4 rounded shadow" src="slide_pg16.png"/><img alt="Página 17" class="mb-4 rounded shadow" src="slide_pg17.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_9">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_9')">×</span>
+<h2 class="text-2xl font-bold mb-4">RUA DA MEMORIA</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 18" class="mb-4 rounded shadow" src="slide_pg18.png"/><img alt="Página 19" class="mb-4 rounded shadow" src="slide_pg19.png"/><img alt="Página 20" class="mb-4 rounded shadow" src="slide_pg20.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_10">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_10')">×</span>
+<h2 class="text-2xl font-bold mb-4">REVITALIZAÇÃO RUA CRUZ MACHADO</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 21" class="mb-4 rounded shadow" src="slide_pg21.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_11">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_11')">×</span>
+<h2 class="text-2xl font-bold mb-4">REQUALIFICAÇÃO URBANA</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 22" class="mb-4 rounded shadow" src="slide_pg22.png"/><img alt="Página 23" class="mb-4 rounded shadow" src="slide_pg23.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_12">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_12')">×</span>
+<h2 class="text-2xl font-bold mb-4">PROJETO DE PAISAGISMO E CALÇADAS</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 24" class="mb-4 rounded shadow" src="slide_pg24.png"/><img alt="Página 25" class="mb-4 rounded shadow" src="slide_pg25.png"/><img alt="Página 26" class="mb-4 rounded shadow" src="slide_pg26.png"/><img alt="Página 27" class="mb-4 rounded shadow" src="slide_pg27.png"/><img alt="Página 28" class="mb-4 rounded shadow" src="slide_pg28.png"/><img alt="Página 29" class="mb-4 rounded shadow" src="slide_pg29.png"/><img alt="Página 30" class="mb-4 rounded shadow" src="slide_pg30.png"/><img alt="Página 31" class="mb-4 rounded shadow" src="slide_pg31.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_13">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_13')">×</span>
+<h2 class="text-2xl font-bold mb-4">PLANO DE ESTRUTURA CICLOVIÁRIA DE CURITIBA</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 32" class="mb-4 rounded shadow" src="slide_pg32.png"/>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_proj_14">
+<div class="bg-white w-full h-full p-6 rounded-none shadow-lg relative overflow-y-auto">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_proj_14')">×</span>
+<h2 class="text-2xl font-bold mb-4">PLATAFORMA INTEGRADORA</h2>
+<div class="overflow-y-auto max-h-[75vh]">
+<img alt="Página 33" class="mb-4 rounded shadow" src="slide_pg33.png"/><img alt="Página 34" class="mb-4 rounded shadow" src="slide_pg34.png"/>
+</div>
+</div>
+</div>
+<!-- Seção Impacto -->
+<!-- Seção Orçamento -->
+<!-- Seção Documentos -->
+<!-- Seção Contato -->
+<section class="py-16 bg-gray-800 text-white" id="contato">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Contato</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div>
+<h3 class="text-xl font-bold mb-6">Instituto de Pesquisa e Planejamento Urbano de Curitiba (IPPUC)</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="mr-4 mt-1" data-feather="map-pin"></i>
+<div>
+<p class="font-medium">Endereço</p>
+<p class="text-gray-300">Rua Bom Jesus, 669 - Juvevê, Curitiba - PR</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="mr-4 mt-1" data-feather="phone"></i>
+<div>
+<p class="font-medium">Telefone</p>
+<p class="text-gray-300">(41) 3350-9000</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="mr-4 mt-1" data-feather="mail"></i>
+<div>
+<p class="font-medium">E-mail</p>
+<p class="text-gray-300">ippuc@curitiba.pr.gov.br</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="mr-4 mt-1" data-feather="clock"></i>
+<div>
+<p class="font-medium">Horário de Atendimento</p>
+<p class="text-gray-300">Segunda a sexta, das 8h às 12h e das 13h às 17h</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6">Envie sua Mensagem</h3>
+<form class="space-y-4">
+<div>
+<label class="block mb-1" for="name">Nome</label>
+<input class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" type="text"/>
+</div>
+<div>
+<label class="block mb-1" for="email">E-mail</label>
+<input class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" type="email"/>
+</div>
+<div>
+<label class="block mb-1" for="subject">Assunto</label>
+<input class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="subject" type="text"/>
+</div>
+<div>
+<label class="block mb-1" for="message">Mensagem</label>
+<textarea class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" rows="4"></textarea>
+</div>
+<button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium" type="submit">
+                            Enviar Mensagem
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Rodapé -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+</footer>
+<!-- Modal Structure -->
+<div class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="modal1">
+<div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+<div class="p-6">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold text-gray-800">Portal Nosso Bairro</h3>
+<button class="text-gray-500 hover:text-gray-700" onclick="closeModal('modal1')">
+<i data-feather="x"></i>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<img alt="Portal Nosso Bairro" class="w-full rounded-lg" src="https://mid-noticias.curitiba.pr.gov.br/2023/capa/00424734.jpg"/>
+</div>
+<div>
+<div class="bg-blue-50 p-4 rounded-lg mb-4">
+<h4 class="font-bold text-blue-800 mb-2">Informações Básicas</h4>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<p class="text-sm text-gray-600">Categoria:</p>
+<p class="font-medium">Urbanismo</p>
+</div>
+<div>
+<p class="text-sm text-gray-600">Status:</p>
+<p class="font-medium">Em execução</p>
+</div>
+<div>
+<p class="text-sm text-gray-600">Investimento:</p>
+<p class="font-medium">R$ 12.500.000</p>
+</div>
+<div>
+<p class="text-sm text-gray-600">Prazo:</p>
+<p class="font-medium">24 meses</p>
+</div>
+</div>
+</div>
+<div class="flex space-x-2 mb-4">
+<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Participação social</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Tecnologia</span>
+<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Gestão pública</span>
+</div>
+</div>
+</div>
+<div class="prose max-w-none">
+<h4 class="text-xl font-bold text-gray-800 mb-3">Objetivo</h4>
+<p class="text-gray-700 mb-6">
+                        O Portal Nosso Bairro é uma plataforma digital integrada que visa fortalecer a gestão participativa nos bairros de Curitiba, permitindo que os cidadãos acompanhem, opinem e contribuam com o desenvolvimento de suas comunidades.
+                    </p>
+<h4 class="text-xl font-bold text-gray-800 mb-3">Diferenciais</h4>
+<ul class="list-disc pl-5 mb-6 text-gray-700 space-y-2">
+<li>Integração com sistemas municipais existentes</li>
+<li>Ferramentas de georreferenciamento para identificação de demandas</li>
+<li>Sistema de votação e priorização de melhorias</li>
+<li>Transparência na alocação de recursos por bairro</li>
+<li>Acesso multiplataforma (web e mobile)</li>
+</ul>
+<h4 class="text-xl font-bold text-gray-800 mb-3">Impacto Esperado</h4>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+<div class="bg-gray-50 p-3 rounded text-center">
+<p class="text-2xl font-bold text-blue-600">100%</p>
+<p class="text-sm text-gray-600">dos bairros atendidos</p>
+</div>
+<div class="bg-gray-50 p-3 rounded text-center">
+<p class="text-2xl font-bold text-blue-600">+50%</p>
+<p class="text-sm text-gray-600">de engajamento cidadão</p>
+</div>
+<div class="bg-gray-50 p-3 rounded text-center">
+<p class="text-2xl font-bold text-blue-600">30%</p>
+<p class="text-sm text-gray-600">redução tempo resposta</p>
+</div>
+<div class="bg-gray-50 p-3 rounded text-center">
+<p class="text-2xl font-bold text-blue-600">4.8</p>
+<p class="text-sm text-gray-600">satisfação (1-5)</p>
+</div>
+</div>
+<h4 class="text-xl font-bold text-gray-800 mb-3">Situação Atual</h4>
+<p class="text-gray-700 mb-6">
+                        O projeto está em fase de desenvolvimento, com a primeira versão piloto sendo testada em 3 bairros da cidade. A previsão é que até o final do ano a plataforma esteja disponível para todos os bairros de Curitiba.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium flex items-center" href="#">
+<i class="mr-2" data-feather="download"></i> Baixar Ficha Técnica
+                        </a>
+<a class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-2 rounded-lg font-medium flex items-center" href="#">
+<i class="mr-2" data-feather="map-pin"></i> Ver no Mapa
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Repeat similar modals for other projects (modal2, modal3, etc.) -->
+<div class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="modal2">
+<!-- Modal content for Casa do Urbanismo -->
+</div>
+<div class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="modal3">
+<!-- Modal content for Plano Cicloviário -->
+</div>
+<!-- Add more modals as needed -->
+<script>
+        // Initialize Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    feather.replace();
+                } else {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+        
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            feather.replace();
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_1">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_1')">×</span>
+<h2 class="text-2xl font-bold mb-4">SMATI</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="SMATI - SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO E TECNOLOGIA DA INFORMAÇÃO.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_2">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_2')">×</span>
+<h2 class="text-2xl font-bold mb-4">SMS</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="SMS- SECRETARIA MUNICIPAL DE SAÚDE.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_3">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_3')">×</span>
+<h2 class="text-2xl font-bold mb-4">SMMA</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="SMMA - SECRETARIA MUNICIPAL DO MEIO AMBIENTE.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_4">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_4')">×</span>
+<h2 class="text-2xl font-bold mb-4">IPPUC</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="IPPUC - Instituto de Pesquisa e Planejamento Urbano de Curitiba.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_1">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_1')">×</span>
+<h2 class="text-2xl font-bold mb-4">SMATI</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="SMATI - SECRETARIA MUNICIPAL DE ADMINISTRAÇÃO E TECNOLOGIA DA INFORMAÇÃO.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_2">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_2')">×</span>
+<h2 class="text-2xl font-bold mb-4">SMS</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="SMS- SECRETARIA MUNICIPAL DE SAÚDE.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_3">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_3')">×</span>
+<h2 class="text-2xl font-bold mb-4">SMMA</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="SMMA - SECRETARIA MUNICIPAL DO MEIO AMBIENTE.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_4">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_4')">×</span>
+<h2 class="text-2xl font-bold mb-4">IPPUC</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="IPPUC - Instituto de Pesquisa e Planejamento Urbano de Curitiba.pdf"></iframe>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex items-center justify-center" id="modal_sec_4">
+<div class="bg-white w-full h-full p-6 relative">
+<span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal_sec_4')">×</span>
+<h2 class="text-2xl font-bold mb-4">SAMIR</h2>
+<iframe class="w-full h-[90vh]" frameborder="0" src="PROJETOS SMIR -  SECRETARIA MUNICIPAL DA MULHER E IGUALDADE ÉTNICO-RACIAL.pdf"></iframe>
+</div>
+</div>
+</body>
+</html>
